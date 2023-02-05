@@ -1,0 +1,42 @@
+{
+    "version": 8,
+    "name": "Mapbox Streets",
+    "sprite": "mapbox://sprites/mapbox/streets-v8",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "sources": {
+        "maine": {
+            "type": "geojson",
+            "data": {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-77.0323, 38.9131]
+                },
+                "properties": {
+                    "title": "Mapbox DC",
+                    "marker-symbol": "monument"
+                }
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "water",
+            "source": "maine",
+            "type": "fill",
+            "paint": {
+                "fill-color": "#d4a62a"
+            }
+        },
+        {
+            "id": "outline",
+            "type": "line",
+            "source": "maine",
+            "layout": {},
+            "paint": {
+            "line-color": "#000",
+            "line-width": 3
+            }
+        }
+    ]
+}
