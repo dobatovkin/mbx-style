@@ -6,17 +6,7 @@
     "sources": {
         "maine": {
             "type": "geojson",
-            "data": {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [-77.0323, 38.9131]
-                },
-                "properties": {
-                    "title": "Mapbox DC",
-                    "marker-symbol": "monument"
-                }
-            }
+            "data": "https://cxy-mvt.s3.us-west-2.amazonaws.com/test/geojson_tests/tradearea.json"
         }
     },
     "layers": [
