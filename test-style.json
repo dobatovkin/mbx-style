@@ -1,23 +1,14 @@
 {
     "version": 8,
-    "name": "Mapbox Streets",
-    "sprite": "mapbox://sprites/mapbox/streets-v8",
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "name": "geojson_tests",
     "sources": {
         "maine": {
             "type": "geojson",
-            "data": "https://cxy-mvt.s3.us-west-2.amazonaws.com/test/geojson_tests/tradearea.geojson"
+            "data": "https://cxy-mvt.s3.us-west-2.amazonaws.com/test/geojson_tests/tradearea.json"
         }
     },
     "layers": [
-        {
-            "id": "water",
-            "source": "maine",
-            "type": "fill",
-            "paint": {
-                "fill-color": "#d4a62a"
-            }
-        },
+
         {
             "id": "outline",
             "type": "line",
